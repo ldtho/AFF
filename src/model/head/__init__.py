@@ -1,0 +1,1 @@
+from .simple_head import HEAD_REGISTRY

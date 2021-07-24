@@ -1,0 +1,12 @@
+dataset:
+  resize_shape: (160,160)
+  augmentation:
+    mixup_alpha: 0.2
+model:
+  head:
+    name: simple_head
+    hidden_dims: [500,400,300,200]
+    dropout: 0.4
+  solver:
+    loss:
+      name: label_smoothing_cross_entropy
